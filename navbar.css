@@ -1,0 +1,16 @@
+.topnav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    margin: 10px 170px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
