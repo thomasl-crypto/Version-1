@@ -1,19 +1,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>European Mythology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Norse Mythology</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="Fonts.css">
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="mythology.css">
 </head>
     <body>
         <div class="topnav">
-                <a class="active" href="index.html"><span class="material-symbols-outlined">home</span></a>
+                <a href="index.html"><span class="material-symbols-outlined">home</span></a>
                 <a href="Greek.html">Greek</a>
                 <a href="Roman.html">Roman</a>
-                <a href="Norse.html">Norse</a>
+                <a class="active" href="Norse.html">Norse</a>
                 <div class="dropdown">
                     <button class="dropbtn">Misc
                         <span class="material-symbols-outlined">arrow_drop_down</span>
@@ -24,7 +24,7 @@
                             <a href="#">Link 3</a>
                         </div>
                 </div>
-                  <div class="search-wrapper">
+                <div class="search-wrapper">
                         <div class="search-container">
                             <input type="Search" placeholder="Search...">
                             <button type="submit"><span class="material-symbols-outlined">search</span></button>
@@ -42,14 +42,17 @@
 
                             </div>
                             <div class="textsize-control">
-                                <label for="textsizeslider">Text size: <span id="textsizevalue">16</span>px</label>
-                                <input type="range" min="12" max="32" value="16" id="textsizeslider" title="Adjust text size">
+                                <label>Text size: <span id="textsizevalue">16</span>px</label>
+                                <input type="range" min="12" max="32" value="16" id="textsizeslider">
                                 <button id="resetsize">Default</button>
                             </div>
                         </div>
                 </div>
-        </div>      
-        <h1>European Mythology</h1>
+        </div>
+        <h1>Norse Mythology</h1>
+    <h1 class="left"><a href="norse/gods/norsegods.html">Gods</a></h1>
+    <h1 class="right"><a href="norse/heroes/norseheroes.html">Heroes</a></h1>
+    <h1 class="left"><a href="norse/myths/norsemyths.html">Myths</a></h1>
         <script src="textsize.js"></script>
         <script src="darkmode.js"></script>
         <script src="search.js"></script>

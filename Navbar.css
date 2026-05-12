@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+}
+
+.topnav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.5vw 3.5vw;
+    text-decoration: none;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: "bodyfont";
+    line-height: 0.99;
+}
+
+.topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.topnav a.active {
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 0,
+  'GRAD' 0,
+  'opsz' 0,
+}
+
+.material-symbols-outlined {
+    font-size: 3.9vw;
+    display: block;
+}
+
+.topnav input[type=Search] {
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+  margin: 0;
+}
+.topnav .search-container button .material-symbols-outlined {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.topnav .search-container {
+  display: flex;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.topnav .search-container button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid black;
+}
+
+.topnav .search-container button:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.topnav .search-container button:active {
+  transform: scale(0.99);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropbtn {
+    font-size: 4vw;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.5vw 2.6vw;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: "bodyfont";
+    line-height: 0.99;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown .dropbtn.settingsbtn {
+  padding: 0.4vw 1vw;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown.settings-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown.settings-menu .dropdown-content {
+  right: 0 !important;
+  left: auto !important;
+}
+
+.textsize-control {
+    padding: 12px 16px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.textsize-control input[type=range] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.textsize-control button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-family: "bodyfont";
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.textsize-control button:hover {
+  background: black;
+  color: white;
+}
+.darkmode-control {
+    padding: 12px 16px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "bodyfont";
+    font-size: 18px;
+    gap: 10px;
+}
+
+.darkmode-control button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-family: "bodyfont";
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.darkmode-control button:hover {
+    background: black;
+    color: white;
+}
+
+body.lightmode .topnav {
+    background-color: black;
+}
+
+body.lightmode .topnav a {
+    color: white;
+}
+
+body.lightmode .topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+body.lightmode .topnav a.active {
+    background-color: white;
+    color: black;
+}
+
+body.lightmode .dropdown .dropbtn {
+    color: white;
+}
+
+body.lightmode .topnav a:hover,
+body.lightmode .dropdown:hover .dropbtn {
+    background-color: white;
+    color: white;
+}
+
+body.lightmode .dropdown-content {
+    background-color: white;
+}
+
+body.lightmode .dropdown-content a {
+    color: black;
+}
+
+body.lightmode .dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+body.lightmode .textsize-control {
+    color: black;
+}
+
+body.lightmode .darkmode-control {
+    color: black;
+}
+
+#search-results {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    min-width: 300px;
+    z-index: 100;
+    display: none;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+}
+
+.search-result-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid black;
+    font-family: "bodyfont";
+    font-size: 18px;
+}
+
+.search-result-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0 !important;
+    font-size: 16px !important;
+    height: auto !important;
+    line-height: normal !important;
+}
+
+.search-result-item a:hover {
+    background: none !important;
+    color: black !important;
+}
+
+.search-result-item:hover {
+    background-color: white;
+}
+
+body.lightmode #search-results {
+    background-color: white;
+    border: 1px solid black;
+}
+
+body.lightmode .search-result-item {
+    border-bottom: 1px solid black;
+}
+
+body.lightmode .search-result-item a {
+    color: black;
+}
+
+.search-wrapper {
+    display: none !important;
+}
+

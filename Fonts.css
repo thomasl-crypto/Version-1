@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "headfont";
+    src: url('A_letra_do_reino.ttf');
+}
+@font-face {
+    font-family: 'bodyfont';
+    src: url('Constantine.ttf');
+}
+h1 {
+    font-family: "headfont" , 'Times New Roman', Times, serif;
+}
+
+h2  {
+    font-family: "headfont" , 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: "bodyfont";
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 a {
+    color: inherit;
+}
+
+

@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+body.lightmode {
+    background-color: white;
+}
+
+body.lightmode h1 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+body.lightmode p {
+    color: black;
+}
